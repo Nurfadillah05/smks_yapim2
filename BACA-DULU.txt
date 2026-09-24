@@ -1,0 +1,166 @@
+
+=== REVISI LOMBA 23 SEPTEMBER 2026 ===
+- Struktur organisasi dirapikan: ikon di dalam lingkaran dihapus, warna node dan tipografi diperjelas.
+- Motto tidak diubah desain desktopnya; pada HP hanya ukuran dan jarak yang disesuaikan agar tidak bertumpuk.
+- Admin dashboard diringkas; panel petunjuk yang tidak perlu dihapus.
+- Upload admin dibatasi 4 MB; file di atas 4 MB diberi notifikasi dan tidak dikirim. Gambar yang lolos akan dioptimalkan otomatis.
+
+- Jurusan aktif di website: Akuntansi (AK) dan Administrasi Perkantoran.
+- Foto khusus HP untuk Hero: tepat 2 foto berganti setiap 3 detik. Foto pertama foto-sejarah.jpg; foto kedua memakai foto-hero.jpg jika tersedia, jika belum otomatis memakai gedung-sekolah.png.
+- Galeri maksimal 20 foto; upload maksimal 4 MB/foto dan sistem mengoptimalkan ukuran gambar.
+- Instagram maksimal 6 postingan aktif, masa tayang 7 x 24 jam.
+- Klik ikon Instagram diarahkan langsung ke akun Instagram sekolah.
+- Tampilan sudah dipoles untuk HP/tablet/laptop/PC dan admin dibuat lebih elegan.
+
+=====================================================================
+ WEBSITE SMKS INDONESIA MEMBANGUN 2 MEDAN
+ (SMK Bisnis Manajemen dan Pariwisata YAPIM Medan)
+ Dibuat dengan HTML, CSS, JavaScript, PHP, dan MySQL
+=====================================================================
+
+-------------------------------------------------
+A. CARA MEMASANG DI XAMPP
+-------------------------------------------------
+1. Buka XAMPP Control Panel, klik Start pada "Apache" dan "MySQL".
+2. Letakkan folder "smks_yapim2" ke dalam folder htdocs.
+   Contoh: C:\xampp\htdocs\smks_yapim2
+3. Buka browser, masuk ke: http://localhost/phpmyadmin
+4. Klik tab "Import" -> Choose File -> pilih file:
+      smks_yapim2/database/smks_yapim2.sql
+   lalu klik "Go/Kirim". Database "smks_yapim2" akan terbuat otomatis
+   beserta semua tabel dan contoh datanya.
+5. Buka website: http://localhost/smks_yapim2/
+   Buka admin  : http://localhost/smks_yapim2/admin/login.php
+
+-------------------------------------------------
+B. AKUN ADMIN
+-------------------------------------------------
+   Username : admin
+   Password : admin123
+
+   Ganti password lewat phpMyAdmin bila perlu. Password disimpan dalam
+   bentuk terenkripsi (password_hash bawaan PHP), jadi untuk menggantinya
+   buat hash baru dulu, misalnya dengan file sementara berisi:
+       <?php echo password_hash('passwordbaru', PASSWORD_DEFAULT);
+   lalu salin hasilnya ke kolom `password` pada tabel `admin`.
+
+-------------------------------------------------
+C. KALAU MySQL PUNYA PASSWORD
+-------------------------------------------------
+   Buka file: config/koneksi.php
+   Ubah baris:  $db_pass = '';
+   menjadi   :  $db_pass = 'password_mysql_anda';
+
+-------------------------------------------------
+D. YANG BISA DIATUR LEWAT HALAMAN ADMIN
+-------------------------------------------------
+   1. GALERI     : tambah, ubah, hapus foto kegiatan (+ label nama kegiatan)
+   2. PRESTASI   : tambah, ubah, hapus prestasi siswa
+   3. INSTAGRAM  : tambah, ubah, hapus postingan/video (SEMUA tampil di beranda
+                   dan bisa digeser ke samping, yang terbaru paling depan)
+
+   Semua gambar yang diunggah tersimpan di folder uploads/.
+   Format yang diperbolehkan: JPG, PNG, WEBP, GIF. Maksimal 4 MB.
+
+-------------------------------------------------
+E. MENGGANTI GAMBAR TETAP (yang tidak lewat admin)
+-------------------------------------------------
+   Gambar di folder assets/img/ sekarang masih gambar sementara.
+   Timpa saja dengan foto asli, JANGAN ganti nama filenya:
+
+   assets/img/logo.png              -> logo sekolah
+   assets/img/gedung-sekolah.png    -> foto gedung di bagian hero
+   assets/img/kepala-sekolah.png    -> foto kepala sekolah (paling bagus PNG
+                                       tanpa latar belakang)
+   assets/img/jurusan-akuntansi.png -> gambar kartu jurusan Akuntansi
+   assets/img/kegiatan/ak-3.png -> gambar kartu Administrasi Perkantoran
+   
+   assets/img/kegiatan/ak-1.jpg s/d ak-4.jpg -> 4 foto kegiatan Akuntansi
+   assets/img/kegiatan/ph-1.jpg s/d ph-4.jpg -> 4 foto kegiatan Perhotelan
+
+-------------------------------------------------
+F. MENGUBAH TULISAN (nama, alamat, visi misi, mitra, fasilitas)
+-------------------------------------------------
+   Semua teks tetap ada di satu file: includes/data.php
+   Di sana bisa diubah: nama sekolah, alamat, telepon, email, instagram,
+   motto, visi, misi, sambutan kepala sekolah, daftar fasilitas,
+   struktur organisasi, dan daftar kerja sama industri tiap jurusan.
+
+-------------------------------------------------
+G. SUSUNAN FILE
+-------------------------------------------------
+   index.php              -> beranda (memanggil file di folder sections/)
+   jurusan.php            -> halaman tiap jurusan (?j=akuntansi / ?j=perhotelan)
+
+   sections/              -> isi beranda dipisah per bagian
+        hero.php          1. tampilan atas
+        sambutan.php      2. profil / sambutan kepala sekolah
+        sejarah.php       3. sejarah (ganti tulisan di bagian atas file)
+        visimisi.php      4. visi & misi
+        struktur.php      (struktur organisasi)
+        jurusan.php       5. kompetensi keahlian
+        ekstrakurikuler.php 6. ekstrakurikuler (daftar di includes/data.php)
+        prestasi.php      7. prestasi (dari database)
+        galeri.php        8. galeri (dari database)
+        motto.php         (motto)
+        instagram.php     (video/postingan instagram, dari database)
+        fasilitas.php     9. fasilitas
+        kontak.php        10. kontak + peta
+
+   Urutan bagian di index.php SAMA dengan urutan menu di navbar
+   (includes/header.php). Kalau memindah bagian, pindahkan juga menunya.
+
+   includes/
+        header.php        bar info, menu kiri | logo tengah | menu kanan, pencarian
+        footer.php        footer, tombol ke atas, kotak perbesar gambar
+        data.php          semua teks sekolah
+        ikon.php          kumpulan ikon SVG
+
+   config/koneksi.php     pengaturan database
+   assets/css/style.css   tampilan website
+   assets/css/admin.css   tampilan panel admin
+   assets/js/main.js      animasi, geser, pencarian, perbesar gambar
+   assets/js/admin.js     pratinjau gambar, konfirmasi hapus
+   admin/                 halaman admin
+   uploads/               tempat gambar hasil unggahan admin
+   database/              file SQL untuk diimport
+
+-------------------------------------------------
+I. TAMPILAN JURUSAN (REVISI TERBARU, MENGIKUTI PDF)
+-------------------------------------------------
+   1. Beranda -> "Dua Program Keahlian"   : sections/jurusan.php
+   2. Halaman detail tiap jurusan          : jurusan.php
+      (kolase foto, penjelasan jurusan, kotak Kerja Sama yang bisa
+       dibuka-tutup dengan mengklik judulnya)
+   3. Semua tulisan dan warna jurusan ada di includes/data.php
+      pada bagian $jurusan:
+        judul       -> nama yang tampil (mis. "Akuntansi (AK)")
+        sub         -> kalimat di bawah judul
+        uraian      -> paragraf penjelasan jurusan
+        kartu/tema  -> warna kartu beranda / warna halaman detail
+        kerjasama   -> tulisan tombol, judul kotak, dan catatan hijau
+        mitra       -> daftar perusahaan / hotel mitra
+   4. Foto kolase di halaman detail = 4 foto di assets/img/kegiatan/
+      (ak-1.jpg s/d ak-4.jpg dan ph-1.jpg s/d ph-4.jpg).
+      Foto kartu di beranda = assets/img/jurusan-akuntansi.png dan
+      assets/img/kegiatan/ak-3.png.
+   5. LOGO MITRA (opsional): letakkan file logo di assets/img/mitra/
+      dengan nama = nama mitra huruf kecil, spasi jadi tanda minus.
+      Contoh: pt-astra-international-tbk.png
+      Kalau logo belum ada, otomatis tampil kotak berwarna berisi
+      inisial mitra. Nama file untuk tiap mitra: lihat daftar $jurusan.
+   6. Huruf judul "Dua Program Keahlian" memakai Playfair Display dari
+      Google Fonts. Kalau komputer offline, otomatis memakai huruf
+      serif cadangan (Georgia), tampilan tetap rapi.
+
+-------------------------------------------------
+H. CATATAN
+-------------------------------------------------
+   - Website tidak memakai library dari internet, jadi tetap jalan
+     walaupun komputer sedang offline.
+   - Sudah bisa dibuka rapi di HP maupun laptop.
+   - Bagian ekstrakurikuler, prestasi, galeri, video IG (dan fasilitas di HP)
+     bisa digeser ke samping. Bagian-bagian muncul dengan animasi saat digulir.
+   - Kalau ada gambar yang belum diletakkan, kotaknya tetap rapi dan
+     menuliskan nama file yang harus diisi (tidak muncul gambar rusak).
+=====================================================================

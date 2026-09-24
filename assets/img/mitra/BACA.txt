@@ -1,0 +1,5 @@
+Letakkan logo mitra di folder ini.
+Nama file = nama mitra huruf kecil, spasi jadi tanda minus.
+Contoh: pt-astra-international-tbk.png  /  hotel-savadia.jpg
+Format yang didukung: png, jpg, webp, svg. Ukuran kotak logo 36x36 px, jadi
+file kecil (di bawah 100 KB) sudah cukup.

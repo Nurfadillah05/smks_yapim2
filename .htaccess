@@ -1,0 +1,4 @@
+# Batas unggah gambar admin: 4 MB per file.
+# post_max_size dibuat 8 MB agar form multipart tidak ditolak karena overhead.
+php_value upload_max_filesize 4M
+php_value post_max_size 8M
