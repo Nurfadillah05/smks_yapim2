@@ -1,0 +1,1841 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description"
+      content="SMKS Indonesia Membangun 2 Medan — SMK Bisnis Manajemen dan Pariwisata YAPIM Medan.">
+
+<title>Beranda | SMKS Indonesia Membangun 2 Medan</title>
+
+<link rel="icon" href="assets/img/logo.png">
+
+<!-- huruf dari Google Fonts: Plus Jakarta Sans untuk judul, Inter untuk teks, Playfair Display untuk judul bagian jurusan -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/style.css?v=1790184540">
+
+<!-- tanda bahwa JavaScript aktif (dipakai untuk animasi muncul saat digulir) -->
+<script>document.documentElement.className += ' js';</script>
+</head>
+
+<body>
+
+<a class="lewati" href="#konten">Lewati ke isi halaman</a>
+
+
+<!-- =========================================================
+     BAR INFORMASI ATAS
+========================================================= -->
+<div class="bar-info">
+
+    <div class="wadah wadah--lebar bar-info__isi">
+
+        <a class="bar-info__item bar-info__alamat"
+           href="https://www.google.com/maps/search/?api=1&amp;query=Jl.+Air+Bersih+No.+59+Medan+Kota"
+           target="_blank"
+           rel="noopener">
+
+            <svg class="ikon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+            <span>Jl. Air Bersih No. 59, Medan Kota</span>
+
+        </a>
+
+        <div class="bar-info__kanan">
+
+            <a class="bar-info__item"
+               href="tel:0617864701">
+
+                <svg class="ikon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 3.5h2l1.6 3.8-1.7 1.4a12.5 12.5 0 0 0 6 6l1.4-1.7 3.8 1.6v2a2 2 0 0 1-2.2 2C10.5 18 6 13.5 4.5 5.7a2 2 0 0 1 2-2.2Z"/></svg>
+                <span>061 7864 701</span>
+
+            </a>
+
+            <a class="bar-info__item bar-info__ig"
+               href="https://www.instagram.com/smk_bm_par_yapimedan/"
+               target="_blank"
+               rel="noopener"
+               aria-label="Instagram SMK_BM_PAR_YAPIMEDAN"
+               title="Instagram @SMK_BM_PAR_YAPIMEDAN">
+                <svg class="ikon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="1.1" fill="currentColor" stroke="none"/></svg>            </a>
+
+            <span class="bar-info__pisah" aria-hidden="true"></span>
+
+            <button class="bar-info__cari"
+                    type="button"
+                    data-buka-cari
+                    aria-label="Cari di halaman ini">
+
+                <svg class="ikon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+                <span>Cari</span>
+
+            </button>
+
+            <a class="bar-info__admin"
+               href="admin/login.php">
+
+                <svg class="ikon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2 5 6v5.2c0 4.3 2.9 8.1 7 9.6 4.1-1.5 7-5.3 7-9.6V6Z"/><path d="m9.2 12.2 2 2 3.6-3.8"/></svg>
+                <span>Admin</span>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     NAVBAR
+     Menu kiri | LOGO (tepat di tengah) | menu kanan
+========================================================= -->
+<header class="navbar" id="navbar">
+
+    <nav class="wadah wadah--lebar navbar__isi" aria-label="Menu utama">
+
+        <!-- tombol cari (hanya tampil di HP) -->
+        <button class="navcari navcari--hp"
+                type="button"
+                data-buka-cari
+                aria-label="Cari di halaman ini">
+
+            <svg class="ikon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+        </button>
+
+
+        <!-- ================= LOGO TENGAH ================= -->
+        <a class="navlogo"
+           href="index.php"
+           aria-label="Beranda SMK YAPIM 2 MEDAN">
+
+            <img src="assets/img/logo.png"
+                 alt="Logo SMK YAPIM 2 MEDAN"
+                 class="navlogo__img"
+                 data-fallback="logo">
+
+        </a>
+
+
+        <div class="navpanel" id="navPanel">
+
+            <!-- ================= MENU KIRI ================= -->
+            <ul class="navmenu navmenu--kiri">
+                            <li>
+                <a class="navlink aktif"
+                   href="index.php#hero"
+                   data-seksi="hero">
+
+                    <span class="navlink__ikon"><svg class="ikon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.8V20a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V9.8"/></svg></span>
+
+                    <span class="navlink__teks">Beranda</span>
+                </a>
+            </li>
+                    <li>
+                <a class="navlink"
+                   href="profil.php"
+                   data-seksi="profil">
+
+                    <span class="navlink__ikon"><svg class="ikon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M2.5 20c.6-3.6 3.3-5.5 6.5-5.5s5.9 1.9 6.5 5.5"/><path d="M17 5.5a3 3 0 0 1 0 5.6"/><path d="M18.4 20c-.2-1.6-.7-2.9-1.5-3.9"/></svg></span>
+
+                    <span class="navlink__teks">Profil</span>
+                </a>
+            </li>
+                    <li>
+                <a class="navlink"
+                   href="sejarah.php"
+                   data-seksi="sejarah">
+
+                    <span class="navlink__ikon"><svg class="ikon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 12a8.5 8.5 0 1 0 2.6-6.1"/><path d="M3.5 4.5v4.2h4.2"/><path d="M12 7.8V12l2.8 1.8"/></svg></span>
+
+                    <span class="navlink__teks">Sejarah</span>
+                </a>
+            </li>
+                    <li>
+                <a class="navlink"
+                   href="visimisi.php"
+                   data-seksi="visi-misi">
+
+                    <span class="navlink__ikon"><svg class="ikon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="1.2" fill="currentColor"/></svg></span>
+
+                    <span class="navlink__teks">Visi &amp; Misi</span>
+                </a>
+            </li>
+                    <li>
+                <a class="navlink"
+                   href="jurusan-list.php"
+                   data-seksi="jurusan">
+
+                    <span class="navlink__ikon"><svg class="ikon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 4 9 4.2-9 4.2-9-4.2Z"/><path d="M6.5 10v4.6c0 1.6 2.6 2.9 5.5 2.9s5.5-1.3 5.5-2.9V10"/><path d="M21 8.2v5"/></svg></span>
+
+                    <span class="navlink__teks">Jurusan</span>
+                </a>
+            </li>
+                    </ul>
+
+            <!-- ================= MENU KANAN ================= -->
+            <ul class="navmenu navmenu--kanan">
+                            <li>
+                <a class="navlink"
+                   href="prestasi.php"
+                   data-seksi="prestasi">
+
+                    <span class="navlink__ikon"><svg class="ikon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3h8v5a4 4 0 0 1-8 0Z"/><path d="M8 4.5H5.5V6a3 3 0 0 0 3 3"/><path d="M16 4.5h2.5V6a3 3 0 0 1-3 3"/><path d="M12 12v4"/><path d="M8.5 21h7l-1-4h-5Z"/></svg></span>
+
+                    <span class="navlink__teks">Prestasi</span>
+                </a>
+            </li>
+                    <li>
+                <a class="navlink"
+                   href="galeri.php"
+                   data-seksi="galeri">
+
+                    <span class="navlink__ikon"><svg class="ikon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="15" rx="2.5"/><circle cx="8.5" cy="10" r="1.6"/><path d="m4 17 4.5-4.2 3.4 3.1 3-2.7L20 17"/></svg></span>
+
+                    <span class="navlink__teks">Galeri</span>
+                </a>
+            </li>
+                    <li>
+                <a class="navlink"
+                   href="fasilitas.php"
+                   data-seksi="fasilitas">
+
+                    <span class="navlink__ikon"><svg class="ikon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 20h18"/><path d="M5 20V9l7-5 7 5v11"/><path d="M10 20v-5h4v5"/></svg></span>
+
+                    <span class="navlink__teks">Fasilitas</span>
+                </a>
+            </li>
+                    <li>
+                <a class="navlink"
+                   href="ekstrakurikuler.php"
+                   data-seksi="ekstrakurikuler">
+
+                    <span class="navlink__ikon"><svg class="ikon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3.5 2.6 5.4 5.9.8-4.3 4.1 1.1 5.9L12 16.9l-5.3 2.8 1.1-5.9-4.3-4.1 5.9-.8Z"/></svg></span>
+
+                    <span class="navlink__teks">Ekstrakurikuler</span>
+                </a>
+            </li>
+                    <li>
+                <a class="navlink"
+                   href="kontak.php"
+                   data-seksi="kontak">
+
+                    <span class="navlink__ikon"><svg class="ikon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 3.5h2l1.6 3.8-1.7 1.4a12.5 12.5 0 0 0 6 6l1.4-1.7 3.8 1.6v2a2 2 0 0 1-2.2 2C10.5 18 6 13.5 4.5 5.7a2 2 0 0 1 2-2.2Z"/></svg></span>
+
+                    <span class="navlink__teks">Kontak</span>
+                </a>
+            </li>
+                    </ul>
+
+            <!-- tombol admin (hanya tampil di HP) -->
+            <a class="tombol tombol--admin navpanel__admin"
+               href="admin/login.php">
+
+                <svg class="ikon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2 5 6v5.2c0 4.3 2.9 8.1 7 9.6 4.1-1.5 7-5.3 7-9.6V6Z"/><path d="m9.2 12.2 2 2 3.6-3.8"/></svg>
+                Admin
+
+            </a>
+
+        </div>
+
+
+        <!-- ================= BURGER HP ================= -->
+        <button class="navburger"
+                type="button"
+                id="tombolBurger"
+                aria-label="Buka menu"
+                aria-expanded="false"
+                aria-controls="navPanel">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+    </nav>
+
+</header>
+
+
+<!-- =========================================================
+     PENCARIAN
+========================================================= -->
+<div class="caribox" id="kotakCari" hidden>
+
+    <div class="caribox__isi">
+
+        <div class="caribox__input">
+
+            <svg class="ikon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+            <input type="search"
+                   id="inputCari"
+                   placeholder="Cari jurusan, prestasi, fasilitas, kontak…"
+                   autocomplete="off">
+
+            <button type="button"
+                    id="tutupCari"
+                    aria-label="Tutup pencarian">
+
+                <svg class="ikon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+            </button>
+
+        </div>
+
+        <div class="caribox__hasil"
+             id="hasilCari">
+
+            <p class="caribox__kosong">
+                Ketik kata kunci, misalnya
+                <b>jurusan</b>
+                atau
+                <b>kantin</b>.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<main id="konten">
+<section class="hero" id="hero">
+
+  <!-- Dekorasi background -->
+  <div class="hero__dekor" aria-hidden="true">
+    <span class="hero__orb hero__orb--1"></span>
+    <span class="hero__orb hero__orb--2"></span>
+    <span class="hero__orb hero__orb--3"></span>
+    <span class="hero__dots"></span>
+    <span class="hero__line"></span>
+  </div>
+
+  <div class="wadah hero__grid">
+
+    <!-- ================= TEKS KIRI ================= -->
+    <div class="hero__teks">
+
+      <span class="hero__garis"></span>
+
+      <p class="hero__salam">
+        Selamat Datang di
+      </p>
+
+      <h1 class="hero__judul">
+        SMKS INDONESIA
+        <span>MEMBANGUN 2 MEDAN</span>
+      </h1>
+
+      <p class="hero__nama-resmi">
+        SMK BISNIS MANAJEMEN DAN PARIWISATA YAPIM MEDAN
+      </p>
+
+      <p class="hero__uraian">
+        Membentuk generasi unggul, berkarakter, dan siap bersaing di
+        dunia kerja melalui pendidikan vokasi yang berkualitas.
+      </p>
+
+      <a class="tombol tombol--utama tombol--turun" href="#profil">
+        <span>Jelajahi Sekolah Kami</span>
+        <span class="tombol__panah">
+          <svg class="ikon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4.5v14"/><path d="m6 13 6 6 6-6"/></svg>        </span>
+      </a>
+
+      <!-- indikator slide/dekorasi -->
+      <div class="hero__indikator" aria-hidden="true">
+        <span class="aktif"></span>
+        <span></span>
+        <span></span>
+      </div>
+
+    </div>
+
+
+    <!-- ================= FOTO GEDUNG ================= -->
+    <div class="hero__visual">
+
+      <div class="hero__foto">
+
+        <img
+          class="hero__foto-desktop"
+          src="assets/img/gedung-sekolah.png"
+          alt="Gedung SMKS Indonesia Membangun 2 Medan"
+        >
+
+                <img
+          class="hero__foto-mobile hero__foto-mobile--1"
+          src="assets/img/foto-sejarah.jpg"
+          alt="Foto sekolah"
+          aria-hidden="true"
+        >
+        <img
+          class="hero__foto-mobile hero__foto-mobile--2"
+          src="assets/img/gedung-sekolah.png"
+          alt="Foto sekolah"
+          aria-hidden="true"
+        >
+
+        <div class="hero__foto-overlay"></div>
+
+      </div>
+
+      <!-- bentuk kuning sebagai pemisah -->
+      <div class="hero__kuning"></div>
+
+    </div>
+
+  </div>
+
+
+  <!-- ================= 4 FEATURE ================= -->
+  <div class="wadah hero__feature-wadah">
+
+    <ul class="keunggulan">
+
+      
+        <li
+          class="keunggulan__item"
+          style="--tunda: 0ms"
+        >
+
+          <span class="keunggulan__ikon">
+            <svg class="ikon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 4 9 4.2-9 4.2-9-4.2Z"/><path d="M6.5 10v4.6c0 1.6 2.6 2.9 5.5 2.9s5.5-1.3 5.5-2.9V10"/></svg>          </span>
+
+          <span class="keunggulan__teks">
+            <span class="keunggulan__judul">
+              Kompeten            </span>
+
+            <span class="keunggulan__sub">
+              & Profesional            </span>
+          </span>
+
+        </li>
+
+      
+        <li
+          class="keunggulan__item"
+          style="--tunda: 120ms"
+        >
+
+          <span class="keunggulan__ikon">
+            <svg class="ikon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3.5 2.6 5.4 5.9.8-4.3 4.1 1.1 5.9L12 16.9l-5.3 2.8 1.1-5.9-4.3-4.1 5.9-.8Z"/></svg>          </span>
+
+          <span class="keunggulan__teks">
+            <span class="keunggulan__judul">
+              Berkarakter            </span>
+
+            <span class="keunggulan__sub">
+              & Berakhlak            </span>
+          </span>
+
+        </li>
+
+      
+        <li
+          class="keunggulan__item"
+          style="--tunda: 240ms"
+        >
+
+          <span class="keunggulan__ikon">
+            <svg class="ikon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7.5" width="18" height="12" rx="2.5"/><path d="M9 7.5V5.8A1.8 1.8 0 0 1 10.8 4h2.4A1.8 1.8 0 0 1 15 5.8v1.7"/><path d="M3 13h18"/></svg>          </span>
+
+          <span class="keunggulan__teks">
+            <span class="keunggulan__judul">
+              Siap Kerja            </span>
+
+            <span class="keunggulan__sub">
+              & Berwirausaha            </span>
+          </span>
+
+        </li>
+
+      
+        <li
+          class="keunggulan__item"
+          style="--tunda: 360ms"
+        >
+
+          <span class="keunggulan__ikon">
+            <svg class="ikon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17"/><path d="M12 3.5c2.3 2.4 3.5 5.4 3.5 8.5s-1.2 6.1-3.5 8.5c-2.3-2.4-3.5-5.4-3.5-8.5S9.7 5.9 12 3.5Z"/></svg>          </span>
+
+          <span class="keunggulan__teks">
+            <span class="keunggulan__judul">
+              Berwawasan            </span>
+
+            <span class="keunggulan__sub">
+              Global            </span>
+          </span>
+
+        </li>
+
+      
+    </ul>
+
+  </div>
+
+
+  <!-- Scroll indicator -->
+  <div class="hero__scroll" aria-hidden="true">
+    <span></span>
+    <small>Scroll<br>Down</small>
+  </div>
+
+</section><section class="sambutan seksi" id="profil">
+  <div class="wadah sambutan__wrap">
+
+    <!-- JUDUL -->
+    <div class="sambutan__heading reveal" data-anim="atas">
+      <p class="seksi__label">Tentang Kami</p>
+      <h2 class="seksi__judul">Sambutan Kepala Sekolah</h2>
+    </div>
+
+    <div class="sambutan__grid">
+
+      <!-- FOTO KEPALA SEKOLAH -->
+      <div class="sambutan__foto reveal" data-anim="kiri">
+
+        <!-- dekorasi biru -->
+        <div class="sambutan__shape"></div>
+
+        <!-- aksen kuning -->
+        <span class="sambutan__dot sambutan__dot--one"></span>
+        <span class="sambutan__dot sambutan__dot--two"></span>
+
+        <!-- titik-titik dekorasi -->
+        <div class="sambutan__dots">
+          <i></i><i></i><i></i>
+          <i></i><i></i><i></i>
+          <i></i><i></i><i></i>
+        </div>
+
+        <!-- FOTO IBU -->
+        <div class="sambutan__foto-box">
+          <img
+            class="sambutan__gambar"
+            src="assets/img/kepala-sekolah.png"
+            alt="Vera Panjaitan, S.P, M.Pd"
+            data-fallback="orang"
+          >
+        </div>
+
+        <!-- NAMA -->
+        <div class="sambutan__kartu-nama">
+          <strong>Vera Panjaitan, S.P, M.Pd</strong>
+          <span>Kepala Sekolah</span>
+        </div>
+
+      </div>
+
+
+      <!-- ISI SAMBUTAN -->
+      <div class="sambutan__teks reveal" data-anim="kanan">
+
+        <div class="sambutan__box">
+
+          <!-- ikon kutip -->
+          <div class="sambutan__quote-icon">
+            <svg class="ikon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3.5 2.6 5.4 5.9.8-4.3 4.1 1.1 5.9L12 16.9l-5.3 2.8 1.1-5.9-4.3-4.1 5.9-.8Z"/></svg>          </div>
+
+          <p class="sambutan__salam">
+            Salam sejahtera bagi kita semua.          </p>
+
+                      <p class="sambutan__paragraf">
+              Terima kasih sudah berkunjung ke laman resmi SMKS Indonesia Membangun 2 Medan. Sekolah kami hadir untuk menyiapkan lulusan yang kompeten, berkarakter, dan siap bekerja maupun melanjutkan pendidikan.            </p>
+                      <p class="sambutan__paragraf">
+              Melalui dua program keahlian, Akuntansi dan Administrasi Perkantoran, siswa belajar melalui teori dan praktik nyata dengan didampingi guru yang berpengalaman di bidangnya.            </p>
+                      <p class="sambutan__paragraf">
+              Kami percaya setiap anak punya potensi. Tugas kami menumbuhkannya. Selamat bergabung, dan mari bertumbuh bersama di YAPIM.            </p>
+          
+          <!-- TANDA TANGAN -->
+          <div class="sambutan__ttd">
+            <span class="sambutan__garis"></span>
+
+            <div class="sambutan__ttd-info">
+              <strong>Vera Panjaitan, S.P, M.Pd</strong>
+
+              <span>
+                Kepala Sekolah                SMK YAPIM 2 MEDAN              </span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section><section class="sejarah seksi" id="sejarah">
+
+    <div class="wadah sejarah__grid">
+
+        <!-- ================= FOTO SEJARAH ================= -->
+        <!-- GANTI src di bawah jika ingin memakai foto sejarah khusus. -->
+        <div class="sejarah__visual reveal" data-anim="kiri">
+
+            <div class="sejarah__foto">
+                <img src="assets/img/foto-sejarah.jpg"
+                     alt="Foto sejarah SMKS Indonesia Membangun 2 Medan"
+                     loading="lazy">
+            </div>
+
+            <div class="sejarah__lencana">
+                <small>Sejak</small>
+                <strong>1996</strong>
+            </div>
+
+        </div>
+
+
+        <!-- ================= TULISAN ================= -->
+        <div class="sejarah__isi">
+
+            <div class="sejarah__kepala reveal" data-anim="kanan">
+
+                <p class="seksi__label">Sejarah Sekolah</p>
+
+                <h2 class="seksi__judul">
+                    Perjalanan SMKS Indonesia Membangun 2 Medan
+                </h2>
+
+            </div>
+
+            <div class="sejarah__teks">
+                                    <p class="sejarah__paragraf sejarah__paragraf--awal reveal"
+                       data-anim="kanan"
+                       style="--tunda: 130ms">
+                        SMK Bisnis Manajemen dan Pariwisata YAPIM Medan merupakan bagian dari YAPIM Taruna Medan yang terus berkembang dalam memberikan pendidikan kejuruan bagi generasi muda.                    </p>
+                                    <p class="sejarah__paragraf reveal"
+                       data-anim="kanan"
+                       style="--tunda: 260ms">
+                        Sekolah ini dikembangkan sejak tahun 1996 dengan tujuan memberikan pendidikan yang mengutamakan keterampilan, kedisiplinan, tanggung jawab, serta kesiapan siswa memasuki dunia kerja.                    </p>
+                                    <p class="sejarah__paragraf reveal"
+                       data-anim="kanan"
+                       style="--tunda: 390ms">
+                        Seiring perkembangan kebutuhan dunia pendidikan dan dunia kerja, sekolah terus melakukan pengembangan pada pembelajaran, fasilitas, kegiatan siswa, serta kerja sama dengan dunia usaha dan dunia industri.                    </p>
+                            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="visimisi seksi" id="visi-misi">
+  <div class="visimisi__dekor" aria-hidden="true">
+    <span class="visimisi__orb visimisi__orb--1"></span>
+    <span class="visimisi__orb visimisi__orb--2"></span>
+    <span class="visimisi__ring visimisi__ring--1"></span>
+    <span class="visimisi__ring visimisi__ring--2"></span>
+  </div>
+
+  <div class="wadah">
+    <div class="seksi__kepala seksi__kepala--tengah reveal">
+      <p class="seksi__label seksi__label--terang">Arah Sekolah</p>
+      <h2 class="seksi__judul seksi__judul--terang">Visi &amp; Misi</h2>
+      <p class="seksi__ket seksi__ket--terang">Dibuat seperti kartu informasi agar isinya tetap lengkap, tetapi tidak memenuhi layar sekaligus.</p>
+    </div>
+
+    <div class="vm-tabs" role="tablist" aria-label="Visi dan Misi Sekolah">
+      <button class="vm-tab aktif" type="button" role="tab" aria-selected="true" aria-controls="panel-visi" id="tab-visi" data-vm-tab="visi">
+        <span class="vm-tab__icon"><svg class="ikon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="1.2" fill="currentColor"/></svg></span>
+        <span>Visi</span>
+      </button>
+      <button class="vm-tab" type="button" role="tab" aria-selected="false" aria-controls="panel-misi" id="tab-misi" data-vm-tab="misi">
+        <span class="vm-tab__icon"><svg class="ikon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 4 9 4.2-9 4.2-9-4.2Z"/><path d="M6.5 10v4.6c0 1.6 2.6 2.9 5.5 2.9s5.5-1.3 5.5-2.9V10"/></svg></span>
+        <span>Misi</span>
+      </button>
+    </div>
+
+    <div class="vm-showcase">
+      <article class="vm-card vm-card--visi vm-aktif" id="panel-visi" role="tabpanel" aria-labelledby="tab-visi">
+        <div class="vm-card__top">
+          <span class="vm-card__ikon"><svg class="ikon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="1.2" fill="currentColor"/></svg></span>
+          <div><small>01 · ARAH</small><h3>Visi Sekolah</h3></div>
+          <span class="vm-card__count">10 poin</span>
+        </div>
+        <div class="vm-card__scroll"><ol><li>Beriman dan bertakwa</li><li>Berkarakter dan berkewargaan</li><li>Kompeten</li><li>Kritis</li><li>Kreatif</li><li>Kolaboratif</li><li>Mandiri</li><li>Sehat</li><li>Komunikatif</li><li>Siap bekerja, melanjutkan pendidikan, dan berwirausaha</li></ol></div>
+      </article>
+
+      <article class="vm-card vm-card--misi" id="panel-misi" role="tabpanel" aria-labelledby="tab-misi" hidden>
+        <div class="vm-card__top">
+          <span class="vm-card__ikon"><svg class="ikon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 4 9 4.2-9 4.2-9-4.2Z"/><path d="M6.5 10v4.6c0 1.6 2.6 2.9 5.5 2.9s5.5-1.3 5.5-2.9V10"/></svg></span>
+          <div><small>02 · LANGKAH</small><h3>Misi Sekolah</h3></div>
+          <span class="vm-card__count">11 poin</span>
+        </div>
+        <div class="vm-card__scroll"><ol><li>Menyelenggarakan pembelajaran yang berpusat pada peserta didik</li><li>Menerapkan Pembelajaran Mendalam</li><li>Meningkatkan kemampuan literasi dan numerasi peserta didik</li><li>Mengembangkan delapan dimensi Profil Lulusan</li><li>Meningkatkan kompetensi kejuruan peserta didik</li><li>Memperkuat link and match dengan dunia usaha, dunia industri, dan dunia kerja</li><li>Membangun budaya kerja profesional</li><li>Meningkatkan kompetensi dan profesionalisme pendidik</li><li>Menciptakan lingkungan sekolah yang aman, nyaman, sehat, inklusif, dan berbudaya positif</li><li>Mengembangkan budaya kewirausahaan dan inovasi</li><li>Melaksanakan evaluasi dan perbaikan kurikulum secara berkelanjutan dengan menggunakan data Rapor Pendidikan, hasil asesmen, hasil PKL, masukan peserta didik, guru, orang tua, komite sekolah, dan mitra dunia kerja.</li></ol></div>
+      </article>
+    </div>
+  </div>
+</section>
+<section class="struktur seksi" id="struktur">
+  <div class="wadah">
+    <div class="struktur__papan reveal">
+      <div class="struktur__kepala">
+        <p class="seksi__label">Struktur Organisasi</p>
+        <h2 class="seksi__judul">SMKS Indonesia Membangun 2 Medan</h2>
+        <p class="seksi__ket">Susunan pengelolaan sekolah ditampilkan sebagai ikon agar tetap jelas meskipun belum tersedia foto setiap pengurus.</p>
+      </div>
+      <div class="struktur__bagan">
+        <div class="simpul simpul--utama">
+          <span class="simpul__jabatan">Kepala Sekolah</span>
+          <span class="simpul__nama">Vera Panjaitan, S.P, M.Pd</span>
+        </div>
+        <span class="garis garis--tegak" aria-hidden="true"></span>
+        <div class="simpul simpul--utama">
+          <span class="simpul__jabatan">Wakil Kepala Sekolah</span>
+          <span class="simpul__nama">Elfrida Siagian, S.Pd</span>
+        </div>
+        <span class="garis garis--tegak" aria-hidden="true"></span>
+        <span class="garis garis--cabang" aria-hidden="true"></span>
+        <div class="struktur__cabang">
+                    <div class="simpul simpul--cabang">
+            <span class="simpul__jabatan">Kepala Program Jurusan<br>Akuntansi</span>
+            <span class="simpul__nama">Dra. Lasmaida Manurung</span>
+          </div>
+                    <div class="simpul simpul--cabang">
+            <span class="simpul__jabatan">Kepala Program Jurusan<br>Administrasi Perkantoran</span>
+            <span class="simpul__nama">Agustiani Sumbarwati</span>
+          </div>
+                  </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="program" id="jurusan">
+
+  <!-- hiasan latar (tidak berisi teks penting) -->
+  <span class="program__hias program__hias--garis" aria-hidden="true"></span>
+  <span class="program__hias program__hias--cincin" aria-hidden="true"></span>
+  <span class="program__hias program__hias--busur-kiri" aria-hidden="true"></span>
+  <span class="program__hias program__hias--busur-kanan" aria-hidden="true"></span>
+  <span class="program__slogan" aria-hidden="true">Pendidikan<br>berkualitas<br>untuk masa<br>depan</span>
+
+  <div class="wadah">
+
+    <div class="program__kepala reveal">
+      <p class="program__label"><span>Kompetensi Keahlian</span></p>
+      <h2 class="program__judul">Dua Program Keahlian</h2>
+      <p class="program__sub">SMKS Indonesia Membangun 2 Medan</p>
+    </div>
+
+    <div class="program__grid">
+            <a class="pkartu pkartu--akuntansi reveal" data-anim="kiri"
+         href="jurusan.php?j=akuntansi" style="--k:#0f3c82;--kg:#08214a;--kt:#dbe6f8;--tunda:0ms"
+         aria-label="Lihat selengkapnya jurusan Akuntansi">
+
+        <span class="pkartu__foto">
+          <span class="pkartu__blob pkartu__blob--1" aria-hidden="true"></span>
+          <span class="pkartu__blob pkartu__blob--2" aria-hidden="true"></span>
+
+          <span class="pkartu__bingkai">
+            <img src="assets/img/jurusan-akuntansi.png" alt="Siswa program keahlian Akuntansi"
+                 loading="lazy" data-fallback="jurusan">
+          </span>
+
+          <span class="pkartu__ikon" aria-hidden="true"><svg class="ikon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2.5"/><path d="M8 7.5h8"/><circle cx="9" cy="12" r=".9" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r=".9" fill="currentColor" stroke="none"/><circle cx="15" cy="12" r=".9" fill="currentColor" stroke="none"/><circle cx="9" cy="16" r=".9" fill="currentColor" stroke="none"/><circle cx="12" cy="16" r=".9" fill="currentColor" stroke="none"/><circle cx="15" cy="16" r=".9" fill="currentColor" stroke="none"/></svg></span>
+        </span>
+
+        <span class="pkartu__isi">
+          <span class="pkartu__label">Jurusan</span>
+          <span class="pkartu__nama">Akuntansi (AK)</span>
+          <span class="pkartu__tombol">Lihat Selengkapnya <svg class="ikon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12h14"/><path d="m13 6 6 6-6 6"/></svg></span>
+        </span>
+      </a>
+            <a class="pkartu pkartu--administrasi-perkantoran reveal" data-anim="kanan"
+         href="jurusan.php?j=administrasi-perkantoran" style="--k:#1b58b8;--kg:#0b2f6a;--kt:#dbe9fb;--tunda:160ms"
+         aria-label="Lihat selengkapnya jurusan Administrasi Perkantoran">
+
+        <span class="pkartu__foto">
+          <span class="pkartu__blob pkartu__blob--1" aria-hidden="true"></span>
+          <span class="pkartu__blob pkartu__blob--2" aria-hidden="true"></span>
+
+          <span class="pkartu__bingkai">
+            <img src="assets/img/kegiatan/ak-3.png" alt="Siswa program keahlian Administrasi Perkantoran"
+                 loading="lazy" data-fallback="jurusan">
+          </span>
+
+          <span class="pkartu__ikon" aria-hidden="true"><svg class="ikon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2 5 6v5.2c0 4.3 2.9 8.1 7 9.6 4.1-1.5 7-5.3 7-9.6V6Z"/><path d="m9.2 12.2 2 2 3.6-3.8"/></svg></span>
+        </span>
+
+        <span class="pkartu__isi">
+          <span class="pkartu__label">Jurusan</span>
+          <span class="pkartu__nama">Administrasi Perkantoran</span>
+          <span class="pkartu__tombol">Lihat Selengkapnya <svg class="ikon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12h14"/><path d="m13 6 6 6-6 6"/></svg></span>
+        </span>
+      </a>
+          </div>
+
+    <div class="program__kaki reveal" aria-hidden="true">
+      <span>SMKS Indonesia Membangun 2 Medan</span>
+      <i></i>
+      <span>Disiplin &nbsp;|&nbsp; Terampil &nbsp;|&nbsp; Berkarakter</span>
+    </div>
+
+  </div>
+</section>
+<section class="prestasi seksi" id="prestasi">
+  <div class="wadah">
+    <div class="seksi__kepala seksi__kepala--tengah reveal">
+      <p class="seksi__label">Prestasi Siswa</p>
+      <h2 class="seksi__judul">Hasil latihan yang dibawa pulang</h2>
+      <p class="seksi__ket">Geser ke samping untuk melihat semua prestasi. Klik salah satu untuk memperbesar.</p>
+    </div>
+  </div>
+
+  
+  <div class="geser karusel" data-geser>
+    <button class="geser__tombol geser__tombol--kiri" type="button" data-geser-kiri aria-label="Geser ke kiri"><svg class="ikon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19.5 12h-14"/><path d="m11 6-6 6 6 6"/></svg></button>
+
+    <div class="geser__jalur geser__jalur--pusat" data-geser-jalur tabindex="0" aria-label="Daftar prestasi">
+            <article class="kartu-prestasi reveal" data-anim="zoom" style="--tunda: 0ms" data-naik="0"
+               data-zoom
+               data-zoom-gambar="uploads/prestasi/prestasi-20260923-193051-679275d1.jpg"
+               data-zoom-judul="JUARA — LOMBA GF"
+               data-zoom-ket=""
+               tabindex="0" role="button" aria-label="Perbesar prestasi LOMBA GF">
+        <div class="kartu-prestasi__foto">
+                      <img src="uploads/prestasi/prestasi-20260923-193051-679275d1.jpg" alt="LOMBA GF" loading="lazy" draggable="false">
+                    <span class="kartu-prestasi__zoom"><svg class="ikon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/><path d="M8.5 11h5M11 8.5v5"/></svg></span>
+        </div>
+
+        <div class="kartu-prestasi__label">
+          <span class="pil">JUARA</span>          <h3>LOMBA GF</h3>
+          <p>
+                      </p>
+        </div>
+      </article>
+            <article class="kartu-prestasi reveal" data-anim="zoom" style="--tunda: 90ms" data-naik="1"
+               data-zoom
+               data-zoom-gambar="uploads/prestasi/prestasi-20260923-193033-20b663ca.jpg"
+               data-zoom-judul="JUARA 1 — JUARA UMUM"
+               data-zoom-ket=""
+               tabindex="0" role="button" aria-label="Perbesar prestasi JUARA UMUM">
+        <div class="kartu-prestasi__foto">
+                      <img src="uploads/prestasi/prestasi-20260923-193033-20b663ca.jpg" alt="JUARA UMUM" loading="lazy" draggable="false">
+                    <span class="kartu-prestasi__zoom"><svg class="ikon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/><path d="M8.5 11h5M11 8.5v5"/></svg></span>
+        </div>
+
+        <div class="kartu-prestasi__label">
+          <span class="pil">JUARA 1</span>          <h3>JUARA UMUM</h3>
+          <p>
+                      </p>
+        </div>
+      </article>
+            <article class="kartu-prestasi reveal" data-anim="zoom" style="--tunda: 180ms" data-naik="1"
+               data-zoom
+               data-zoom-gambar="uploads/prestasi/prestasi-20260923-103842-e083685f.jpg"
+               data-zoom-judul="Juara 1 — Lomba tari"
+               data-zoom-ket=""
+               tabindex="0" role="button" aria-label="Perbesar prestasi Lomba tari">
+        <div class="kartu-prestasi__foto">
+                      <img src="uploads/prestasi/prestasi-20260923-103842-e083685f.jpg" alt="Lomba tari" loading="lazy" draggable="false">
+                    <span class="kartu-prestasi__zoom"><svg class="ikon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/><path d="M8.5 11h5M11 8.5v5"/></svg></span>
+        </div>
+
+        <div class="kartu-prestasi__label">
+          <span class="pil">Juara 1</span>          <h3>Lomba tari</h3>
+          <p>
+                      </p>
+        </div>
+      </article>
+            <article class="kartu-prestasi reveal" data-anim="zoom" style="--tunda: 270ms" data-naik="0"
+               data-zoom
+               data-zoom-gambar=""
+               data-zoom-judul="Harapan 1 — Olimpiade Bahasa Inggris"
+               data-zoom-ket="Kota Medan • 2024 • Siswa Kelas X Kompetisi speech dan story telling antar SMK se-Kota Medan."
+               tabindex="0" role="button" aria-label="Perbesar prestasi Olimpiade Bahasa Inggris">
+        <div class="kartu-prestasi__foto">
+                      <span class="foto-kosong" data-fallback="prestasi"><svg class="ikon" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3h8v5a4 4 0 0 1-8 0Z"/><path d="M8 4.5H5.5V6a3 3 0 0 0 3 3"/><path d="M16 4.5h2.5V6a3 3 0 0 1-3 3"/><path d="M12 12v4"/><path d="M8.5 21h7l-1-4h-5Z"/></svg></span>
+                    <span class="kartu-prestasi__zoom"><svg class="ikon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/><path d="M8.5 11h5M11 8.5v5"/></svg></span>
+        </div>
+
+        <div class="kartu-prestasi__label">
+          <span class="pil">Harapan 1</span>          <h3>Olimpiade Bahasa Inggris</h3>
+          <p>
+            Kota Medan • 2024          </p>
+        </div>
+      </article>
+          </div>
+
+    <button class="geser__tombol geser__tombol--kanan" type="button" data-geser-kanan aria-label="Geser ke kanan"><svg class="ikon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12h14"/><path d="m13 6 6 6-6 6"/></svg></button>
+
+    <div class="wadah karusel__kontrol karusel__kontrol--sendiri">
+      <div class="karusel__progres" aria-hidden="true"><span></span></div>
+    </div>
+  </div>
+  </section>
+<section class="galeri seksi" id="galeri">
+  <div class="wadah">
+    <div class="galeri__panel reveal" data-anim="zoom">
+
+      <div class="galeri__kepala">
+        <div>
+          <p class="seksi__label seksi__label--terang">Dokumentasi Kegiatan</p>
+          <h2 class="seksi__judul seksi__judul--terang">Galeri Sekolah</h2>
+        </div>
+        <a class="tombol tombol--emas" href="#galeri-daftar">Lihat semua <svg class="ikon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a>
+      </div>
+
+      
+      <div class="galeri__strip karusel" id="galeri-daftar" data-geser>
+        <div class="galeri__jalur karusel__jalur" data-geser-jalur tabindex="0" aria-label="Foto galeri sekolah">
+                    <figure class="kartu-galeri reveal" data-anim="zoom" style="--tunda: 0ms">
+            <div class="kartu-galeri__foto"
+                 data-zoom
+                 data-zoom-gambar="uploads/galeri/galeri-20260918-181659-7a4d3575.jpg"
+                 data-zoom-judul="kebaktian"
+                 data-zoom-ket="18 September 2026"
+                 tabindex="0" role="button" aria-label="Perbesar foto kebaktian">
+                              <img src="uploads/galeri/galeri-20260918-181659-7a4d3575.jpg" alt="kebaktian" loading="lazy" draggable="false">
+              
+              <!-- label transparan berisi nama kegiatan -->
+              <span class="kartu-galeri__pita">kebaktian</span>
+
+              <span class="kartu-galeri__detail">
+                <svg class="ikon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/><path d="M8.5 11h5M11 8.5v5"/></svg> Lihat detail
+              </span>
+            </div>
+            <figcaption>
+              <h3>kebaktian</h3>
+              <p>18 September 2026</p>
+            </figcaption>
+          </figure>
+                    <figure class="kartu-galeri reveal" data-anim="zoom" style="--tunda: 90ms">
+            <div class="kartu-galeri__foto"
+                 data-zoom
+                 data-zoom-gambar="uploads/galeri/galeri-20260918-182157-3690e641.jpg"
+                 data-zoom-judul="KEDATANGAN PAK CAMAT"
+                 data-zoom-ket="17 September 2026 — Kedatangan pak camat beserta beberapa rekan dalam kegiatan sosialisasi KTP bersama para siswa"
+                 tabindex="0" role="button" aria-label="Perbesar foto KEDATANGAN PAK CAMAT">
+                              <img src="uploads/galeri/galeri-20260918-182157-3690e641.jpg" alt="KEDATANGAN PAK CAMAT" loading="lazy" draggable="false">
+              
+              <!-- label transparan berisi nama kegiatan -->
+              <span class="kartu-galeri__pita">sosialisasi KTP</span>
+
+              <span class="kartu-galeri__detail">
+                <svg class="ikon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/><path d="M8.5 11h5M11 8.5v5"/></svg> Lihat detail
+              </span>
+            </div>
+            <figcaption>
+              <h3>KEDATANGAN PAK CAMAT</h3>
+              <p>17 September 2026</p>
+            </figcaption>
+          </figure>
+                    <figure class="kartu-galeri reveal" data-anim="zoom" style="--tunda: 180ms">
+            <div class="kartu-galeri__foto"
+                 data-zoom
+                 data-zoom-gambar="uploads/galeri/galeri-20260918-181750-64ce1bfa.jpg"
+                 data-zoom-judul="pengajian"
+                 data-zoom-ket="17 September 2026"
+                 tabindex="0" role="button" aria-label="Perbesar foto pengajian">
+                              <img src="uploads/galeri/galeri-20260918-181750-64ce1bfa.jpg" alt="pengajian" loading="lazy" draggable="false">
+              
+              <!-- label transparan berisi nama kegiatan -->
+              <span class="kartu-galeri__pita">pengajian</span>
+
+              <span class="kartu-galeri__detail">
+                <svg class="ikon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/><path d="M8.5 11h5M11 8.5v5"/></svg> Lihat detail
+              </span>
+            </div>
+            <figcaption>
+              <h3>pengajian</h3>
+              <p>17 September 2026</p>
+            </figcaption>
+          </figure>
+                    <figure class="kartu-galeri reveal" data-anim="zoom" style="--tunda: 270ms">
+            <div class="kartu-galeri__foto"
+                 data-zoom
+                 data-zoom-gambar="uploads/galeri/galeri-20260918-165606-08391efb.jpg"
+                 data-zoom-judul="Senam Pagi"
+                 data-zoom-ket="10 Desember 2025"
+                 tabindex="0" role="button" aria-label="Perbesar foto Senam Pagi">
+                              <img src="uploads/galeri/galeri-20260918-165606-08391efb.jpg" alt="Senam Pagi" loading="lazy" draggable="false">
+              
+              <!-- label transparan berisi nama kegiatan -->
+              <span class="kartu-galeri__pita">senam pagi bersama di lapangan sekolah</span>
+
+              <span class="kartu-galeri__detail">
+                <svg class="ikon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/><path d="M8.5 11h5M11 8.5v5"/></svg> Lihat detail
+              </span>
+            </div>
+            <figcaption>
+              <h3>Senam Pagi</h3>
+              <p>10 Desember 2025</p>
+            </figcaption>
+          </figure>
+                    <figure class="kartu-galeri reveal" data-anim="zoom" style="--tunda: 270ms">
+            <div class="kartu-galeri__foto"
+                 data-zoom
+                 data-zoom-gambar="uploads/galeri/galeri-20260918-164949-63196c8d.jpg"
+                 data-zoom-judul="Tarian dari Suku Nias"
+                 data-zoom-ket="30 November 2025"
+                 tabindex="0" role="button" aria-label="Perbesar foto Tarian dari Suku Nias">
+                              <img src="uploads/galeri/galeri-20260918-164949-63196c8d.jpg" alt="Tarian dari Suku Nias" loading="lazy" draggable="false">
+              
+              <!-- label transparan berisi nama kegiatan -->
+              <span class="kartu-galeri__pita">Menampilkan tarian dari Suku Nias</span>
+
+              <span class="kartu-galeri__detail">
+                <svg class="ikon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/><path d="M8.5 11h5M11 8.5v5"/></svg> Lihat detail
+              </span>
+            </div>
+            <figcaption>
+              <h3>Tarian dari Suku Nias</h3>
+              <p>30 November 2025</p>
+            </figcaption>
+          </figure>
+                    <figure class="kartu-galeri reveal" data-anim="zoom" style="--tunda: 270ms">
+            <div class="kartu-galeri__foto"
+                 data-zoom
+                 data-zoom-gambar="uploads/galeri/galeri-20260918-165314-b0b9c6a1.jpg"
+                 data-zoom-judul="Engglish Day"
+                 data-zoom-ket="11 Juli 2025"
+                 tabindex="0" role="button" aria-label="Perbesar foto Engglish Day">
+                              <img src="uploads/galeri/galeri-20260918-165314-b0b9c6a1.jpg" alt="Engglish Day" loading="lazy" draggable="false">
+              
+              <!-- label transparan berisi nama kegiatan -->
+              <span class="kartu-galeri__pita">membawakan English Day</span>
+
+              <span class="kartu-galeri__detail">
+                <svg class="ikon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/><path d="M8.5 11h5M11 8.5v5"/></svg> Lihat detail
+              </span>
+            </div>
+            <figcaption>
+              <h3>Engglish Day</h3>
+              <p>11 Juli 2025</p>
+            </figcaption>
+          </figure>
+                  </div>
+
+        <div class="galeri__kontrol">
+          <div class="karusel__progres karusel__progres--terang" aria-hidden="true"><span></span></div>
+          <div class="karusel__tombol">
+            <button class="geser__tombol" type="button" data-geser-kiri aria-label="Geser galeri ke kiri"><svg class="ikon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19.5 12h-14"/><path d="m11 6-6 6 6 6"/></svg></button>
+            <button class="geser__tombol" type="button" data-geser-kanan aria-label="Geser galeri ke kanan"><svg class="ikon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12h14"/><path d="m13 6 6 6-6 6"/></svg></button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- kotak putih melengkung -->
+      <div class="galeri__kaki">
+        <p class="galeri__kaki-label">Dokumentasi</p>
+        <h3 class="galeri__kaki-judul">Kegiatan Siswa YAPIM</h3>
+        <p class="galeri__kaki-ket">Kegiatan belajar, praktik jurusan, upacara, sampai lomba antar sekolah, semuanya terekam di sini.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="motto seksi" id="motto">
+
+    <div class="wadah">
+
+        <div class="motto__panel">
+
+            <!-- ==================================================
+                 DEKORASI BACKGROUND
+                 ================================================== -->
+            <div class="motto__dekor" aria-hidden="true">
+
+                <span class="motto__dot motto__dot--1"></span>
+                <span class="motto__dot motto__dot--2"></span>
+                <span class="motto__dot motto__dot--3"></span>
+                <span class="motto__dot motto__dot--4"></span>
+                <span class="motto__dot motto__dot--5"></span>
+                <span class="motto__dot motto__dot--6"></span>
+
+                <span class="motto__star motto__star--1">✦</span>
+                <span class="motto__star motto__star--2">✦</span>
+
+                <span class="motto__arc motto__arc--1"></span>
+                <span class="motto__arc motto__arc--2"></span>
+
+                <span class="motto__plane">➤</span>
+
+            </div>
+
+
+            <!-- ==================================================
+                 SMARTPHONE
+                 ================================================== -->
+            <div class="motto__hp" aria-hidden="true">
+
+                <div class="motto__hp-bingkai">
+
+                    <div class="motto__hp-layar">
+
+                        <!-- Notch -->
+                        <div class="motto__hp-notch"></div>
+
+
+                        <!-- IKON PENDIDIKAN -->
+                        <div class="motto__hp-icon">
+
+                            <svg
+                                viewBox="0 0 100 100"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+
+                                <!-- bintang -->
+                                <path
+                                    d="M78 10
+                                       l3 7
+                                       7 3
+                                       -7 3
+                                       -3 7
+                                       -3-7
+                                       -7-3
+                                       7-3z"
+                                    fill="#F5B301"
+                                />
+
+                                <!-- kepala -->
+                                <circle
+                                    cx="50"
+                                    cy="25"
+                                    r="8"
+                                    fill="#F5B301"
+                                />
+
+                                <!-- badan/orang -->
+                                <path
+                                    d="M39 37
+                                       Q50 30 61 37
+                                       L65 48
+                                       Q50 55 35 48
+                                       Z"
+                                    fill="#F5B301"
+                                />
+
+                                <!-- buku kiri -->
+                                <path
+                                    d="M17 55
+                                       Q31 49 48 59
+                                       V82
+                                       Q32 72 17 78
+                                       Z"
+                                    fill="none"
+                                    stroke="#F5B301"
+                                    stroke-width="4"
+                                    stroke-linejoin="round"
+                                />
+
+                                <!-- buku kanan -->
+                                <path
+                                    d="M83 55
+                                       Q69 49 52 59
+                                       V82
+                                       Q68 72 83 78
+                                       Z"
+                                    fill="none"
+                                    stroke="#F5B301"
+                                    stroke-width="4"
+                                    stroke-linejoin="round"
+                                />
+
+                            </svg>
+
+                        </div>
+
+
+                        <!-- JUDUL DALAM HP -->
+                        <div class="motto__hp-judul">
+                            Masa Depan<br>
+                            Dimulai di Sini
+                        </div>
+
+
+                        <!-- TEKS KECIL -->
+                        <div class="motto__hp-sub">
+                            Belajar · Berkembang · Berprestasi
+                        </div>
+
+
+                        <!-- BUTTON -->
+                        <div class="motto__hp-tombol">
+                            Mulai Sekarang
+                            <span>→</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- BAYANGAN HP -->
+                <span class="motto__bayang"></span>
+
+            </div>
+
+
+            <!-- ==================================================
+                 IKON PENDIDIKAN DI ANTARA HP DAN TEKS
+                 ================================================== -->
+            <div class="motto__pendidikan" aria-hidden="true">
+
+                <svg
+                    viewBox="0 0 100 100"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+
+                    <!-- bintang -->
+                    <path
+                        d="M77 10
+                           l3 7
+                           7 3
+                           -7 3
+                           -3 7
+                           -3-7
+                           -7-3
+                           7-3z"
+                        fill="#F5B301"
+                    />
+
+                    <!-- kepala -->
+                    <circle
+                        cx="50"
+                        cy="29"
+                        r="7"
+                        fill="#F5B301"
+                    />
+
+                    <!-- badan -->
+                    <path
+                        d="M40 40
+                           Q50 34 60 40
+                           L63 50
+                           Q50 56 37 50
+                           Z"
+                        fill="#F5B301"
+                    />
+
+                    <!-- buku kiri -->
+                    <path
+                        d="M16 57
+                           Q30 51 48 61
+                           V82
+                           Q31 73 16 78
+                           Z"
+                        fill="none"
+                        stroke="#F5B301"
+                        stroke-width="4"
+                        stroke-linejoin="round"
+                    />
+
+                    <!-- buku kanan -->
+                    <path
+                        d="M84 57
+                           Q70 51 52 61
+                           V82
+                           Q69 73 84 78
+                           Z"
+                        fill="none"
+                        stroke="#F5B301"
+                        stroke-width="4"
+                        stroke-linejoin="round"
+                    />
+
+                </svg>
+
+            </div>
+
+
+            <!-- ==================================================
+                 TEKS MOTTO
+                 ================================================== -->
+            <div class="motto__teks">
+
+                <div class="motto__label">
+                    <span>MOTTO SEKOLAH</span>
+                    <i></i>
+                </div>
+
+
+                <blockquote class="motto__kalimat">
+
+                    “Unggul dalam prestasi,<br>
+                    bersama kita bisa”
+
+                    <strong>
+                        YAPIM TARUNA JAYA!!!
+                    </strong>
+
+                </blockquote>
+
+
+                <p class="motto__ket">
+                    Semangat yang kami bawa setiap hari,
+                    dari ruang kelas sampai tempat praktik kerja.
+                </p>
+
+            </div>
+
+
+            <!-- ==================================================
+                 SCROLL DOWN
+                 ================================================== -->
+            <div class="motto__scroll">
+
+                <span class="motto__scroll-icon">
+                    <b></b>
+                    <i>⌄</i>
+                </span>
+
+                <span class="motto__scroll-text">
+                    SCROLL DOWN
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section><section class="ig seksi" id="instagram">
+  <div class="wadah ig__layout">
+    <div class="ig__teks reveal" data-anim="kiri">
+      <p class="seksi__label">Media Sosial</p>
+      <h2 class="seksi__judul">Ikuti keseharian kami di Instagram</h2>
+      <p class="seksi__ket">Lihat kegiatan terbaru siswa dan sekolah. Tiga postingan ditampilkan terlebih dahulu, sisanya tinggal digeser ke kiri atau kanan.</p>
+      <a class="tombol tombol--utama ig__ikuti" href="https://www.instagram.com/smk_bm_par_yapimedan/" target="_blank" rel="noopener">
+        <svg class="ikon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="1.1" fill="currentColor" stroke="none"/></svg> <span>@SMK_BM_PAR_YAPIMEDAN</span>
+      </a>
+    </div>
+
+          <div class="ig__media karusel" data-geser>
+        <div class="karusel__jalur" data-geser-jalur tabindex="0" aria-label="Video dan postingan Instagram">
+                    <a class="kartu-ig reveal" data-anim="zoom" href="https://www.instagram.com/p/DdYsldVE9Ep/?img_index=1&amp;stkn=bDc0dXV2bHF2enc0" target="_blank" rel="noopener" style="--tunda: 0ms">
+            <span class="kartu-ig__foto">
+                              <img src="uploads/instagram/instagram-20260918-181321-0f5c0403.jpg" alt="Pengajian" loading="lazy" draggable="false">
+                            <span class="kartu-ig__play"><svg class="ikon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m10 8.5 6 3.5-6 3.5Z"/></svg></span>
+            </span>
+            <span class="kartu-ig__isi">
+              <strong>Pengajian</strong>
+                          </span>
+          </a>
+                    <a class="kartu-ig reveal" data-anim="zoom" href="https://www.instagram.com/p/DdYvAuwk8WU/?img_index=10&amp;stkn=cjhoeTJzOGZidXQx" target="_blank" rel="noopener" style="--tunda: 90ms">
+            <span class="kartu-ig__foto">
+                              <img src="uploads/instagram/instagram-20260918-181007-24f118f3.jpg" alt="Kebaktian" loading="lazy" draggable="false">
+                            <span class="kartu-ig__play"><svg class="ikon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m10 8.5 6 3.5-6 3.5Z"/></svg></span>
+            </span>
+            <span class="kartu-ig__isi">
+              <strong>Kebaktian</strong>
+                          </span>
+          </a>
+                    <a class="kartu-ig reveal" data-anim="zoom" href="https://www.instagram.com/reel/DcNb9FkzaPG/?utm_source=ig_web_copy_link&amp;stkn=MzRlODBiNWFlZA==" target="_blank" rel="noopener" style="--tunda: 180ms">
+            <span class="kartu-ig__foto">
+                              <img src="uploads/instagram/instagram-20260918-175656-d744e8f7.jpg" alt="DANCE" loading="lazy" draggable="false">
+                            <span class="kartu-ig__play"><svg class="ikon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m10 8.5 6 3.5-6 3.5Z"/></svg></span>
+            </span>
+            <span class="kartu-ig__isi">
+              <strong>DANCE</strong>
+                          </span>
+          </a>
+                    <a class="kartu-ig reveal" data-anim="zoom" href="https://www.instagram.com/p/DdGhaPxEyig/?img_index=2&amp;stkn=NHl3czJ3cnVpczUz" target="_blank" rel="noopener" style="--tunda: 270ms">
+            <span class="kartu-ig__foto">
+                              <img src="uploads/instagram/instagram-20260918-174948-c12886c1.jpg" alt="Kamis Kreatif" loading="lazy" draggable="false">
+                            <span class="kartu-ig__play"><svg class="ikon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m10 8.5 6 3.5-6 3.5Z"/></svg></span>
+            </span>
+            <span class="kartu-ig__isi">
+              <strong>Kamis Kreatif</strong>
+                          </span>
+          </a>
+                  </div>
+        <div class="karusel__kontrol ig__kontrol">
+          <div class="karusel__progres" aria-hidden="true"><span></span></div>
+          <div class="karusel__tombol">
+            <button class="geser__tombol" type="button" data-geser-kiri aria-label="Geser ke kiri"><svg class="ikon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19.5 12h-14"/><path d="m11 6-6 6 6 6"/></svg></button>
+            <button class="geser__tombol" type="button" data-geser-kanan aria-label="Geser ke kanan"><svg class="ikon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12h14"/><path d="m13 6 6 6-6 6"/></svg></button>
+          </div>
+        </div>
+      </div>
+      </div>
+</section>
+<section class="potensi seksi potensi--mandiri" id="fasilitas">
+  <div class="potensi__dekor" aria-hidden="true"></div>
+  <div class="wadah">
+    <div class="seksi__kepala seksi__kepala--tengah reveal" data-anim="atas">
+      <p class="seksi__label">Fasilitas Sekolah</p>
+      <h2 class="seksi__judul">Ruang Belajar yang Mendukung</h2>
+      <p class="seksi__ket">Berbagai fasilitas yang mendukung proses belajar, praktik, dan kegiatan siswa.</p>
+    </div>
+    <div class="potensi__mandiri-list" data-geser>
+      <div class="potensi-geser__jalur potensi-geser__jalur--icon" data-geser-jalur tabindex="0" aria-label="Geser daftar fasilitas sekolah">
+                  <article class="icon-potensi reveal" data-anim="zoom" style="--tunda: 0ms" tabindex="0" role="button" aria-label="Ruang Praktik Akuntansi &amp; Perkantoran">
+            <span class="icon-potensi__lingkaran"><svg class="ikon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2.5"/><path d="M8 7.5h8"/><circle cx="9" cy="12" r=".9" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r=".9" fill="currentColor" stroke="none"/><circle cx="15" cy="12" r=".9" fill="currentColor" stroke="none"/><circle cx="9" cy="16" r=".9" fill="currentColor" stroke="none"/><circle cx="12" cy="16" r=".9" fill="currentColor" stroke="none"/><circle cx="15" cy="16" r=".9" fill="currentColor" stroke="none"/></svg></span>
+            <span class="icon-potensi__nama">Ruang Praktik Akuntansi &amp; Perkantoran</span>
+          </article>
+                  <article class="icon-potensi reveal" data-anim="zoom" style="--tunda: 70ms" tabindex="0" role="button" aria-label="Laboratorium Komputer">
+            <span class="icon-potensi__lingkaran"><svg class="ikon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="12" rx="2"/><path d="M8.5 20.5h7"/><path d="M12 16.5v4"/></svg></span>
+            <span class="icon-potensi__nama">Laboratorium Komputer</span>
+          </article>
+                  <article class="icon-potensi reveal" data-anim="zoom" style="--tunda: 140ms" tabindex="0" role="button" aria-label="Hotel Mini YAPIM">
+            <span class="icon-potensi__lingkaran"><svg class="ikon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 20.5h18"/><path d="M4.5 20.5V5A1.5 1.5 0 0 1 6 3.5h12A1.5 1.5 0 0 1 19.5 5v15.5"/><path d="M8 7.5h2M14 7.5h2M8 11.5h2M14 11.5h2"/><path d="M10 20.5v-4h4v4"/></svg></span>
+            <span class="icon-potensi__nama">Hotel Mini YAPIM</span>
+          </article>
+                  <article class="icon-potensi reveal" data-anim="zoom" style="--tunda: 210ms" tabindex="0" role="button" aria-label="Lobby">
+            <span class="icon-potensi__lingkaran"><svg class="ikon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 20.5h18"/><path d="M5 20.5v-6.2a2 2 0 0 1 2-2h2.5v8.2"/><path d="M9.5 16.3H5"/><path d="M14 20.5V6.5a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v14"/></svg></span>
+            <span class="icon-potensi__nama">Lobby</span>
+          </article>
+                  <article class="icon-potensi reveal" data-anim="zoom" style="--tunda: 280ms" tabindex="0" role="button" aria-label="Ruang Kelas">
+            <span class="icon-potensi__lingkaran"><svg class="ikon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="11" rx="2"/><path d="M7 19.5h10"/><path d="M12 15v4.5"/><path d="M7 8h7"/><path d="M7 11h4"/></svg></span>
+            <span class="icon-potensi__nama">Ruang Kelas</span>
+          </article>
+                  <article class="icon-potensi reveal" data-anim="zoom" style="--tunda: 280ms" tabindex="0" role="button" aria-label="Ruang Guru">
+            <span class="icon-potensi__lingkaran"><svg class="ikon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="7.5" r="3"/><path d="M3.5 19.5c.5-3.2 2.9-5 5.5-5s5 1.8 5.5 5"/><rect x="15" y="5" width="6" height="8" rx="1.2"/></svg></span>
+            <span class="icon-potensi__nama">Ruang Guru</span>
+          </article>
+                  <article class="icon-potensi reveal" data-anim="zoom" style="--tunda: 280ms" tabindex="0" role="button" aria-label="Lapangan Basket">
+            <span class="icon-potensi__lingkaran"><svg class="ikon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 3.5v17"/><path d="M3.5 12h17"/><path d="M5.5 6c3.5 3 3.5 9 0 12"/><path d="M18.5 6c-3.5 3-3.5 9 0 12"/></svg></span>
+            <span class="icon-potensi__nama">Lapangan Basket</span>
+          </article>
+                  <article class="icon-potensi reveal" data-anim="zoom" style="--tunda: 280ms" tabindex="0" role="button" aria-label="Kantin">
+            <span class="icon-potensi__lingkaran"><svg class="ikon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3v7a2.5 2.5 0 0 0 5 0V3"/><path d="M8.5 12.5V21"/><path d="M17 3c-1.6 1.2-2.5 3-2.5 5.2 0 1.6.9 2.6 2.5 2.8V21"/></svg></span>
+            <span class="icon-potensi__nama">Kantin</span>
+          </article>
+              </div>
+    </div>
+    <div class="potensi__titik" data-geser-titik aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  </div>
+</section>
+<section class="potensi seksi potensi--mandiri potensi--ekstra" id="ekstrakurikuler">
+  <div class="potensi__dekor" aria-hidden="true"></div>
+  <div class="wadah">
+    <div class="seksi__kepala seksi__kepala--tengah reveal" data-anim="atas">
+      <p class="seksi__label">Ekstrakurikuler</p>
+      <h2 class="seksi__judul">Kembangkan Minat dan Bakat</h2>
+      <p class="seksi__ket">Pilihan kegiatan yang membantu siswa mengembangkan minat, bakat, karakter, dan pengalaman.</p>
+    </div>
+    <div class="potensi__mandiri-list" data-geser>
+      <div class="potensi-geser__jalur potensi-geser__jalur--icon" data-geser-jalur tabindex="0" aria-label="Geser daftar ekstrakurikuler">
+                  <article class="icon-potensi reveal" data-anim="zoom" style="--tunda: 0ms" tabindex="0" role="button" aria-label="Karate">
+            <span class="icon-potensi__lingkaran"><svg class="ikon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8.5" cy="4.6" r="2"/><path d="M9 7.2 10 13"/><path d="M9.4 8.6 5.4 10.6"/><path d="M9.4 8.6 14.6 7.4"/><path d="M10 13l-2 6.8"/><path d="M10 13l8.6-1.6"/><path d="M18.6 11.4l1.4 2.4"/></svg></span>
+            <span class="icon-potensi__nama">Karate</span>
+          </article>
+                  <article class="icon-potensi reveal" data-anim="zoom" style="--tunda: 70ms" tabindex="0" role="button" aria-label="Futsal">
+            <span class="icon-potensi__lingkaran"><svg class="ikon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="m12 8.3 3.4 2.5-1.3 4h-4.2l-1.3-4Z"/><path d="M12 8.3V3.6"/><path d="m15.4 10.8 4.3-1.4"/><path d="m14.1 14.8 2.7 3.6"/><path d="m9.9 14.8-2.7 3.6"/><path d="m8.6 10.8-4.3-1.4"/></svg></span>
+            <span class="icon-potensi__nama">Futsal</span>
+          </article>
+                  <article class="icon-potensi reveal" data-anim="zoom" style="--tunda: 140ms" tabindex="0" role="button" aria-label="Voli">
+            <span class="icon-potensi__lingkaran"><svg class="ikon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 3.5c-1.3 3.3-1 6.5 1.3 9.3 1.5 1.8 3.7 3 6.6 3.4"/><path d="M4.2 9.2c3.6.1 6.4 1.4 8.3 3.5"/><path d="M8.3 19.2c.4-3 2-5.3 4.9-6.6"/></svg></span>
+            <span class="icon-potensi__nama">Voli</span>
+          </article>
+                  <article class="icon-potensi reveal" data-anim="zoom" style="--tunda: 210ms" tabindex="0" role="button" aria-label="Tari">
+            <span class="icon-potensi__lingkaran"><svg class="ikon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="4.8" r="2"/><path d="M12 7v5"/><path d="M12 8.6c-2.1-.3-4.4-1.6-5.6-4.2"/><path d="M12 8.6c2.1-.3 4.4-1.6 5.6-4.2"/><path d="m12 12-5 8.5h10Z"/></svg></span>
+            <span class="icon-potensi__nama">Tari</span>
+          </article>
+                  <article class="icon-potensi reveal" data-anim="zoom" style="--tunda: 280ms" tabindex="0" role="button" aria-label="Dance">
+            <span class="icon-potensi__lingkaran"><svg class="ikon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 17.5V6l10-2v11.5"/><circle cx="6.5" cy="17.5" r="2.5"/><circle cx="16.5" cy="15.5" r="2.5"/></svg></span>
+            <span class="icon-potensi__nama">Dance</span>
+          </article>
+                  <article class="icon-potensi reveal" data-anim="zoom" style="--tunda: 280ms" tabindex="0" role="button" aria-label="PMR">
+            <span class="icon-potensi__lingkaran"><svg class="ikon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-7.5-4.4-7.5-10A4.3 4.3 0 0 1 12 7.6a4.3 4.3 0 0 1 7.5 2.9c0 5.6-7.5 10-7.5 10Z"/><path d="M12 10.4v4.6"/><path d="M9.7 12.7h4.6"/></svg></span>
+            <span class="icon-potensi__nama">PMR</span>
+          </article>
+                  <article class="icon-potensi reveal" data-anim="zoom" style="--tunda: 280ms" tabindex="0" role="button" aria-label="Organisasi Siswa">
+            <span class="icon-potensi__lingkaran"><svg class="ikon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M2.5 20c.6-3.6 3.3-5.5 6.5-5.5s5.9 1.9 6.5 5.5"/><path d="M17 5.5a3 3 0 0 1 0 5.6"/><path d="M18.4 20c-.2-1.6-.7-2.9-1.5-3.9"/></svg></span>
+            <span class="icon-potensi__nama">Organisasi Siswa</span>
+          </article>
+                  <article class="icon-potensi reveal" data-anim="zoom" style="--tunda: 280ms" tabindex="0" role="button" aria-label="Kegiatan Kejuruan">
+            <span class="icon-potensi__lingkaran"><svg class="ikon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 4 9 4.2-9 4.2-9-4.2Z"/><path d="M6.5 10v4.6c0 1.6 2.6 2.9 5.5 2.9s5.5-1.3 5.5-2.9V10"/><path d="M21 8.2v5"/></svg></span>
+            <span class="icon-potensi__nama">Kegiatan Kejuruan</span>
+          </article>
+              </div>
+    </div>
+    <div class="potensi__titik" data-geser-titik aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  </div>
+</section>
+<section class="kontak seksi" id="kontak">
+  <div class="wadah">
+    <div class="seksi__kepala seksi__kepala--tengah reveal">
+      <p class="seksi__label">Hubungi Kami</p>
+      <h2 class="seksi__judul">Mampir atau hubungi sekolah kami</h2>
+      <p class="seksi__ket">Kami senang menerima kunjungan, pertanyaan, maupun kerja sama. Silakan pilih cara yang paling mudah untukmu.</p>
+    </div>
+
+    <div class="kontak__wrap">
+
+      <div class="kontak__kartu-grid">
+
+        <a class="kontak-mini reveal" data-anim="zoom" href="https://www.google.com/maps/search/?api=1&amp;query=Jl.+Air+Bersih+No.+59+Medan+Kota" target="_blank" rel="noopener" style="--tunda:0ms">
+          <span class="kontak-mini__ikon"><svg class="ikon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg></span>
+          <span class="kontak-mini__isi">
+            <strong>Alamat</strong>
+            <small>Jl. Air Bersih No. 59, Medan Kota</small>
+          </span>
+        </a>
+
+        <a class="kontak-mini reveal" data-anim="zoom" href="tel:0617864701" style="--tunda:80ms">
+          <span class="kontak-mini__ikon"><svg class="ikon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 3.5h2l1.6 3.8-1.7 1.4a12.5 12.5 0 0 0 6 6l1.4-1.7 3.8 1.6v2a2 2 0 0 1-2.2 2C10.5 18 6 13.5 4.5 5.7a2 2 0 0 1 2-2.2Z"/></svg></span>
+          <span class="kontak-mini__isi">
+            <strong>Telepon</strong>
+            <small>061 7864 701 / 061 7864 702</small>
+          </span>
+        </a>
+
+        <a class="kontak-mini reveal" data-anim="zoom" href="mailto:Smk_bmpar@yahoo.com" style="--tunda:160ms">
+          <span class="kontak-mini__ikon"><svg class="ikon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2.5"/><path d="m4 7 8 5.6L20 7"/></svg></span>
+          <span class="kontak-mini__isi">
+            <strong>Email</strong>
+            <small>Smk_bmpar@yahoo.com</small>
+          </span>
+        </a>
+
+        <a class="kontak-mini reveal" data-anim="zoom" href="https://www.instagram.com/smk_bm_par_yapimedan/" target="_blank" rel="noopener" style="--tunda:240ms">
+          <span class="kontak-mini__ikon kontak-mini__ikon--emas"><svg class="ikon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="1.1" fill="currentColor" stroke="none"/></svg></span>
+          <span class="kontak-mini__isi">
+            <strong>Instagram</strong>
+            <small>@SMK_BM_PAR_YAPIMEDAN</small>
+          </span>
+        </a>
+
+      </div>
+
+      <div class="kontak__peta reveal" data-anim="kanan">
+        <iframe
+          src="https://maps.google.com/maps?q=Jl.%20Air%20Bersih%20No.%2059%20Medan%20Kota&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+          title="Peta lokasi SMK YAPIM 2 MEDAN"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <a class="kontak__buka" href="https://www.google.com/maps/search/?api=1&amp;query=Jl.+Air+Bersih+No.+59+Medan+Kota" target="_blank" rel="noopener">
+          Buka di Google Maps <svg class="ikon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12h14"/><path d="m13 6 6 6-6 6"/></svg>        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+</main>
+<!-- /#konten -->
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+<footer class="site-footer">
+
+    <div class="footer-container">
+
+        <!-- =================================================
+             IDENTITAS SEKOLAH
+        ================================================== -->
+        <div class="footer-brand footer-column">
+
+            <!-- LOGO SEKOLAH -->
+            <div class="footer-brand__logo">
+                <img
+                    src="assets/img/logo.png"
+                    alt="Logo SMKS Indonesia Membangun 2 Medan"
+                >
+            </div>
+
+            <!-- NAMA SEKOLAH -->
+            <div class="footer-brand__name">
+
+                <h3>
+                    SMKS INDONESIA<br>
+                    MEMBANGUN 2 MEDAN
+                </h3>
+
+                <p>
+                    SMK BISNIS MANAJEMEN DAN<br>
+                    PARIWISATA YAPIM MEDAN
+                </p>
+
+            </div>
+
+            <!-- AKREDITASI -->
+            <div class="footer-accreditation">
+
+                <span class="footer-accreditation__label">
+                    AKREDITASI
+                </span>
+
+                <strong>
+                    A (UNGGUL)
+                </strong>
+
+            </div>
+
+            <!-- GARIS -->
+            <div class="footer-brand__line"></div>
+
+            <!-- SLOGAN -->
+            <p class="footer-brand__slogan">
+                Pilihan masa depan yang
+                <span class="footer-brand__highlight">cerah, kompeten, dan berkarakter.</span>
+            </p>
+
+        </div>
+
+
+        <!-- =================================================
+             QUICK MENU
+        ================================================== -->
+        <div class="footer-menu footer-column">
+
+            <h3 class="footer-title">
+                <span></span>
+                Quick Menu
+            </h3>
+
+            <ul class="footer-links">
+                <li><a href="index.php#hero"><span class="footer-menu__icon footer-icon--home"><svg class="ikon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.8V20a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V9.8"/></svg></span><span>Beranda</span></a></li>
+                <li><a href="profil.php"><span class="footer-menu__icon footer-icon--profile"><svg class="ikon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M2.5 20c.6-3.6 3.3-5.5 6.5-5.5s5.9 1.9 6.5 5.5"/><path d="M17 5.5a3 3 0 0 1 0 5.6"/><path d="M18.4 20c-.2-1.6-.7-2.9-1.5-3.9"/></svg></span><span>Profil</span></a></li>
+                <li><a href="sejarah.php"><span class="footer-menu__icon footer-icon--history"><svg class="ikon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 12a8.5 8.5 0 1 0 2.6-6.1"/><path d="M3.5 4.5v4.2h4.2"/><path d="M12 7.8V12l2.8 1.8"/></svg></span><span>Sejarah</span></a></li>
+                <li><a href="visimisi.php"><span class="footer-menu__icon footer-icon--visi"><svg class="ikon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="1.2" fill="currentColor"/></svg></span><span>Visi &amp; Misi</span></a></li>
+                <li><a href="jurusan-list.php"><span class="footer-menu__icon footer-icon--study"><svg class="ikon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 4 9 4.2-9 4.2-9-4.2Z"/><path d="M6.5 10v4.6c0 1.6 2.6 2.9 5.5 2.9s5.5-1.3 5.5-2.9V10"/><path d="M21 8.2v5"/></svg></span><span>Jurusan</span></a></li>
+                <li><a href="prestasi.php"><span class="footer-menu__icon footer-icon--prestasi"><svg class="ikon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3h8v5a4 4 0 0 1-8 0Z"/><path d="M8 4.5H5.5V6a3 3 0 0 0 3 3"/><path d="M16 4.5h2.5V6a3 3 0 0 1-3 3"/><path d="M12 12v4"/><path d="M8.5 21h7l-1-4h-5Z"/></svg></span><span>Prestasi</span></a></li>
+                <li><a href="galeri.php"><span class="footer-menu__icon footer-icon--gallery"><svg class="ikon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="15" rx="2.5"/><circle cx="8.5" cy="10" r="1.6"/><path d="m4 17 4.5-4.2 3.4 3.1 3-2.7L20 17"/></svg></span><span>Galeri</span></a></li>
+                <li><a href="fasilitas.php"><span class="footer-menu__icon footer-icon--building"><svg class="ikon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 20h18"/><path d="M5 20V9l7-5 7 5v11"/><path d="M10 20v-5h4v5"/></svg></span><span>Fasilitas</span></a></li>
+                <li><a href="ekstrakurikuler.php"><span class="footer-menu__icon footer-icon--extra"><svg class="ikon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3.5 2.6 5.4 5.9.8-4.3 4.1 1.1 5.9L12 16.9l-5.3 2.8 1.1-5.9-4.3-4.1 5.9-.8Z"/></svg></span><span>Ekstrakurikuler</span></a></li>
+                <li><a href="kontak.php"><span class="footer-menu__icon footer-icon--contact"><svg class="ikon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 3.5h2l1.6 3.8-1.7 1.4a12.5 12.5 0 0 0 6 6l1.4-1.7 3.8 1.6v2a2 2 0 0 1-2.2 2C10.5 18 6 13.5 4.5 5.7a2 2 0 0 1 2-2.2Z"/></svg></span><span>Kontak</span></a></li>
+            </ul>
+
+        </div>
+
+
+        <!-- =================================================
+             HUBUNGI KAMI
+        ================================================== -->
+        <div class="footer-contact footer-column">
+
+            <h3 class="footer-title">
+                <span></span>
+                Hubungi Kami
+            </h3>
+
+            <ul class="footer-contact__list">
+
+
+                <!-- ================= ALAMAT ================= -->
+                <li>
+
+                    <div class="footer-contact__icon footer-contact__icon--location">
+                        <svg class="ikon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>                    </div>
+
+                    <div>
+
+                        <small>Alamat</small>
+
+                        <a
+                            href="https://www.google.com/maps/search/?api=1&amp;query=Jl.+Air+Bersih+No.+59+Medan+Kota"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Jl. Air Bersih No. 59, Medan Kota                        </a>
+
+                    </div>
+
+                </li>
+
+
+                <!-- ================= TELEPON ================= -->
+                <li>
+
+                    <div class="footer-contact__icon footer-contact__icon--phone">
+                        <svg class="ikon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 3.5h2l1.6 3.8-1.7 1.4a12.5 12.5 0 0 0 6 6l1.4-1.7 3.8 1.6v2a2 2 0 0 1-2.2 2C10.5 18 6 13.5 4.5 5.7a2 2 0 0 1 2-2.2Z"/></svg>                    </div>
+
+                    <div>
+
+                        <small>Telepon</small>
+
+                        <a href="tel:0617864701">
+                            061 7864 701
+                        </a>
+
+                        <a href="tel:0617864702">
+                            061 7864 702
+                        </a>
+
+                    </div>
+
+                </li>
+
+
+                <!-- ================= EMAIL ================= -->
+                <li>
+
+                    <div class="footer-contact__icon footer-contact__icon--email">
+                        <svg class="ikon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.8V20a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V9.8"/></svg>                    </div>
+
+                    <div>
+
+                        <small>Email</small>
+
+                        <a href="mailto:Smk_bmpar@yahoo.com">
+                            Smk_bmpar@yahoo.com                        </a>
+
+                    </div>
+
+                </li>
+
+
+                <!-- ================= INSTAGRAM ================= -->
+                <li>
+
+                    <div class="footer-contact__icon footer-contact__icon--instagram">
+                        <svg class="ikon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="1.1" fill="currentColor" stroke="none"/></svg>                    </div>
+
+                    <div>
+
+                        <small>Instagram</small>
+
+                        <a
+                            href="https://www.instagram.com/smk_bm_par_yapimedan/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            SMK_BM_PAR_YAPIMEDAN                        </a>
+
+                    </div>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- =================================================
+             ILUSTRASI GEDUNG
+        ================================================== -->
+        <div class="footer-building footer-column">
+
+            <div class="footer-building__text">
+
+                <span>
+                    Sekolah Pilihan
+                </span>
+
+                <strong>
+                    Masa Depan Cerah
+                </strong>
+
+            </div>
+
+
+            <!-- =================================================
+                 GAMBAR ILUSTRASI GEDUNG
+                 FILE:
+                 assets/img/footer-gedung.png
+            ================================================== -->
+            <img
+                src="assets/img/ilustrasi-gedung.png"
+                alt="Ilustrasi gedung SMKS Indonesia Membangun 2 Medan"
+                loading="lazy"
+            >
+
+
+            <!-- GARIS BAWAH GEDUNG -->
+            <div class="footer-building__line"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         FOOTER BOTTOM
+    ====================================================== -->
+    <div class="footer-bottom">
+
+        <div class="footer-bottom__container">
+
+            <p>
+                &copy; 2026                SMKS Indonesia Membangun 2 Medan.
+                Seluruh hak cipta dilindungi.
+            </p>
+
+            <p>
+                SMK Bisnis Manajemen dan Pariwisata YAPIM Medan
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================================================
+     TOMBOL KEMBALI KE ATAS
+========================================================= -->
+<button
+    class="ke-atas"
+    id="keAtas"
+    type="button"
+    aria-label="Kembali ke atas"
+>
+    <svg class="ikon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19.5v-14"/><path d="m6 11 6-6 6 6"/></svg></button>
+
+
+<!-- =========================================================
+     LIGHTBOX
+========================================================= -->
+<div
+    class="lightbox"
+    id="lightbox"
+    hidden
+>
+
+    <!-- TUTUP -->
+    <button
+        class="lightbox__tutup"
+        id="lightboxTutup"
+        aria-label="Tutup"
+    >
+        <svg class="ikon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>    </button>
+
+
+    <!-- SEBELUMNYA -->
+    <button
+        class="lightbox__nav lightbox__nav--kiri"
+        id="lightboxKiri"
+        aria-label="Sebelumnya"
+    >
+        <svg class="ikon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19.5 12h-14"/><path d="m11 6-6 6 6 6"/></svg>    </button>
+
+
+    <!-- BERIKUTNYA -->
+    <button
+        class="lightbox__nav lightbox__nav--kanan"
+        id="lightboxKanan"
+        aria-label="Berikutnya"
+    >
+        <svg class="ikon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12h14"/><path d="m13 6 6 6-6 6"/></svg>    </button>
+
+
+    <!-- ISI LIGHTBOX -->
+    <figure class="lightbox__isi">
+
+        <img
+            id="lightboxImg"
+            alt=""
+            data-tanpa-pengganti
+        >
+
+        <figcaption>
+
+            <h4 id="lightboxJudul"></h4>
+
+            <p id="lightboxKet"></p>
+
+        </figcaption>
+
+    </figure>
+
+</div>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+<script src="assets/js/main.js?v=1790184540"></script>
+
+</body>
+</html>
